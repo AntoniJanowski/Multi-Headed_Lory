@@ -1,3 +1,36 @@
+# Introduction
+
+This repository contains a student project created by me and two colleagues as part of the *Natural Language Processing* course at the Faculty of Mathematics, University of Warsaw (2024). Our work investigates two recent advancements in Transformer architectures:
+
+- **Lory** – a fully differentiable Mixture-of-Experts mechanism (Zhong et al., 2023)
+- **Multi-Head Mixture-of-Experts** – a technique applying MoE independently across attention heads (Wu et al., 2023)
+
+We combined these approaches into a novel architecture, **Multi-Head Lory**, and evaluated its performance on a language modeling task. A detailed explanation of our methods and experiments can be found in [`NLP_paper.pdf`](./NLP_paper.pdf).
+
+### My contributions:
+- Implemented all required Transformer variants in PyTorch:
+  - Standard Mixture of Experts (baseline)
+  - Multi-Head Mixture of Experts
+  - Lory
+  - Multi-Head Lory  
+  All models are modular and configurable via a single `config` object passed to the `Transformer` class.
+- Built the full training and validation pipeline using PyTorch Lightning, including:
+  - GPU training support  
+  - Model checkpointing  
+  - Training loss logging
+- Conducted model training and hyperparameter search on available GPU resources
+- Co-authored the final report
+
+## 🛠️ Technologies Used
+
+- Python
+- PyTorch
+- PyTorch Lightning
+
+Below is the original README of the repository, describing the code structure and usage in more detail.
+
+---
+
 # Overview
 
 Welcome to the repository! Here, you will find implementations of three different versions of the Mixture of Experts (MoE) layer in a Transformer model.
