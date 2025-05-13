@@ -21,7 +21,7 @@ We combined these approaches into a novel architecture, **Multi-Head Lory**, and
 - Conducted model training and hyperparameter search on available GPU resources
 - Co-authored the final report
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - Python
 - PyTorch
